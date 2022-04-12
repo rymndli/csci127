@@ -21,12 +21,49 @@ def computeFare(zone, ticketType):
      
      fare = 0
      
-     ###################################
-     ### FILL IN YOUR CODE HERE      ###
-     ### Other than your name above, ###
-     ### this is the only section    ###
-     ### you change in this program. ###
-     ###################################
+    if ticketType=='peak':
+
+    if zone==1:
+
+        fare=8.75
+
+    elif zone==2 or zone==3:
+
+        fare=10.25
+
+    elif zone==4:
+
+        fare=2
+    elif zone==5 or zone==6 or zone==7:
+
+        fare=13.50
+
+    elif zone>=8:
+
+        return -1
+
+    elif ticketType=='off-peak':
+
+    if zone==1:
+
+        fare=6.75
+
+    elif zone==2 or zone==3:
+
+        fare=7.50
+
+    elif zone==4:
+
+        fare=8.75
+
+    elif zone==5 or zone==6 or zone==7:
+
+        fare=9.75
+
+    elif zone>=8:
+
+        return -1
+
 
      return(fare)
 
